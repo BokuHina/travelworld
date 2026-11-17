@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelWorld | Подорожуй світом</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Власні стилі -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+
+            <a href="#" class="logo">
+                <i class="fa-solid fa-plane-departure"></i>
+                TravelWorld
+            </a>
+
+            <nav class="navigation">
+                <a href="#home">Головна</a>
+                <a href="#information">Інформація</a>
+            </nav>
+
+            <button class="contact-btn" id="open-modal-btn">
+                <i class="fa-solid fa-envelope me-2"></i>
+                Зв'язатися з нами
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow-1">
+
+        <!-- Hero -->
+        <section class="hero-section" id="home">
+            <div class="container text-center">
+
+                <span class="hero-label">
+                    Відкривай нові горизонти
+                </span>
+
+                <h1>
+                    Подорожі, які надихають
+                </h1>
+
+                <p>
+                    Відкривайте цікаві місця, знайомтеся з новими культурами
+                    та створюйте незабутні спогади разом із TravelWorld.
+                </p>
+
+                <button class="btn btn-warning mt-3"
+                        id="hero-contact-btn">
+                    Спланувати подорож
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- Tabs -->
+        <section class="container tabs-section py-5" id="information">
+
+            <h2 class="section-title text-center">
+                Дізнайтеся більше про TravelWorld
+            </h2>
+
+            <p class="text-center text-secondary mb-4">
+                Оберіть вкладку, щоб переглянути потрібну інформацію
+            </p>
+
+            <div class="tabs-container">
+
+                <!-- Tabs buttons -->
+                <div class="tabs-header">
+
+                    <button class="tab-btn active" data-tab="about">
+                        <i class="fa-solid fa-circle-info me-2"></i>
+                        Про нас
+                    </button>
+
+                    <button class="tab-btn" data-tab="destinations">
+                        <i class="fa-solid fa-earth-europe me-2"></i>
+                        Напрямки
+                    </button>
+
+                    <button class="tab-btn" data-tab="advantages">
+                        <i class="fa-solid fa-star me-2"></i>
+                        Переваги
+                    </button>
+
+                </div>
+
+                <!-- Tabs content -->
+                <div class="tabs-body">
+
+                    <!-- About -->
+                    <div id="about" class="tab-content active">
+
+                        <h3>Про туристичну компанію TravelWorld</h3>
+
+                        <p>
+                            TravelWorld — це туристичний проєкт, створений
+                            для тих, хто любить відкривати нові місця
+                            та подорожувати світом.
+                        </p>
+
+                        <p>
+                            Ми допомагаємо обирати цікаві туристичні напрямки,
+                            знайомимо з особливостями різних країн та
+                            пропонуємо ідеї для майбутнього відпочинку.
+                        </p>
+
+                        <div class="tab-highlight">
+                            <i class="fa-solid fa-globe"></i>
+                            Світ набагато більший, ніж здається!
+                        </div>
+
+                    </div>
+
+                    <!-- Destinations -->
+                    <div id="destinations" class="tab-content">
+
+                        <h3>Популярні туристичні напрямки</h3>
+
+                        <p>
+                            Ми пропонуємо ознайомитися з різними країнами
+                            та обрати напрямок відповідно до власних інтересів.
+                        </p>
+
+                        <div class="row g-3 mt-3">
+
+                            <div class="col-md-4">
+                                <div class="destination-item">
+                                    <i class="fa-solid fa-landmark"></i>
+                                    <h5>Італія</h5>
+                                    <p>Архітектура та культура</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="destination-item">
+                                    <i class="fa-solid fa-mountain-sun"></i>
+                                    <h5>Швейцарія</h5>
+                                    <p>Гори та природа</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="destination-item">
+                                    <i class="fa-solid fa-torii-gate"></i>
+                                    <h5>Японія</h5>
+                                    <p>Традиції та технології</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Advantages -->
+                    <div id="advantages" class="tab-content">
+
+                        <h3>Чому варто обрати TravelWorld?</h3>
+
+                        <p>
+                            Ми прагнемо зробити планування подорожей
+                            простим та зручним для кожного користувача.
+                        </p>
+
+                        <ul class="advantages-list">
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Великий вибір туристичних напрямків.
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Зручна інформація про країни.
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Допомога у виборі маршруту.
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Простий та зрозумілий інтерфейс.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact-section py-5">
+            <div class="container text-center">
+
+                <h2>Готові до нових пригод?</h2>
+
+                <p>
+                    Залиште заявку, і ми допоможемо вам
+                    обрати напрямок для наступної подорожі.
+                </p>
+
+                <button class="btn btn-warning"
+                        id="bottom-contact-btn">
+                    Зв'язатися з нами
+                </button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer mt-auto">
+        <div class="container text-center">
+
+            <h5>
+                <i class="fa-solid fa-plane-departure me-2"></i>
+                TravelWorld
+            </h5>
+
+            <p>
+                Відкривай світ — створюй власні історії.
+            </p>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 TravelWorld. Усі права захищені.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Modal window -->
+    <div class="modal-overlay" id="my-modal">
+
+        <div class="modal-window">
+
+            <button class="close-modal"
+                    type="button"
+                    aria-label="Закрити">
+                &times;
+            </button>
+
+            <div class="modal-icon">
+                <i class="fa-solid fa-plane"></i>
+            </div>
+
+            <h2>Сплануємо вашу подорож?</h2>
+
+            <p class="modal-description">
+                Заповніть форму, щоб залишити заявку на консультацію.
+            </p>
+
+            <form id="contact-form">
+
+                <div class="form-group">
+                    <label for="user-name">Ваше ім'я</label>
+
+                    <input type="text"
+                           id="user-name"
+                           name="name"
+                           placeholder="Введіть ваше ім'я"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-phone">Номер телефону</label>
+
+                    <input type="tel"
+                           id="user-phone"
+                           name="phone"
+                           placeholder="+380 XX XXX XX XX"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-message">Повідомлення</label>
+
+                    <textarea id="user-message"
+                              name="message"
+                              placeholder="Куди плануєте подорож?"
+                              rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Надіслати заявку
+                    <i class="fa-solid fa-paper-plane ms-2"></i>
+                </button>
+
+            </form>
+
+            <p class="form-success" id="form-success">
+                <i class="fa-solid fa-circle-check me-2"></i>
+                Заявку успішно сформовано!
+            </p>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
